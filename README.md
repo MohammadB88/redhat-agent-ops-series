@@ -24,7 +24,7 @@ This repo contains a LangGraph ReAct agent that evolves across the series. We st
 | # | Video | What You Build | Repo Content |
 |---|-------|---------------|--------------|
 | 1 | [Is Your AI Agent a Liability?](https://youtu.be/LJHn6a_z9e0) | - | No code (conceptual framing) |
-| 2 | [Run Local AI Agents for Free](#video-2----run-local-ai-agents-for-free-ollama--qwen--mcp) | Working local agent | Agent code, Ollama/OGX setup, MCP tools |
+| 2 | [Run Local AI Agents for Free](https://youtu.be/i4A8jN41NNs?si=3A20z_qRYWUibSGb) | Working local agent | Agent code, Ollama/OGX setup, MCP tools |
 | 3 | [Deploy AI Agents on Kubernetes](#video-3----deploying-ai-agents-on-kubernetes-ollama-to-vllm) | Containerized agent on OpenShift | Dockerfile, Helm chart, deploy targets |
 | 4 | [Sandbox Your AI Agent](#video-4----sandbox-your-ai-agent-openshell) | Sandboxed agent with OpenShell | OpenShell Helm values |
 | 5 | [MCP Gateway Tool Authorization](#video-5----mcp-gateway-tool-authorization) | Identity-based tool authorization | MCP Gateway manifests |
