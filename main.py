@@ -206,7 +206,7 @@ def _handle_stream(agent_graph, messages: list[HumanMessage], model_id: str) -> 
                     chunk = event["data"]["chunk"]
                     if chunk.content:
                         yield _chunk({"content": chunk.content})
-                
+
                 elif kind == "on_chat_model_end":
                     message = event["data"]["output"]
                     if hasattr(message, "tool_calls") and message.tool_calls:
@@ -217,10 +217,8 @@ def _handle_stream(agent_graph, messages: list[HumanMessage], model_id: str) -> 
                                 for i, tc in enumerate(message.tool_calls)
                             ],
                         })
-                    elif getattr(message, "content", None):
-                        yield _chunk({"content": message.content})
 
-            #yield _chunk({}, finish_reason="stop")
+            yield _chunk({}, finish_reason="stop")
             yield "data: [DONE]\n\n"
 
         except Exception:
